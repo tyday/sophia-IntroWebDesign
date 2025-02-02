@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "testimonial": "Bloom Valley Nursery has the best flowers in town!"
+    },
+    {
+        "id": 2,
+        "name": "Jane Doe",
+        "testimonial": "The customer service at Bloom Valley Nursery is top-notch!"
+    },
+    {
+        "id": 3,
+        "name": "Bob Smith",
+        "testimonial": "Bloom Valley Nursery has the most beautiful plants I've ever seen!"
+    },
+    {
+        "id": 4,
+        "name": "Alice Johnson",
+        "testimonial": "I've been going to Bloom Valley Nursery for years and I've never been disappointed!"
+    }
+]

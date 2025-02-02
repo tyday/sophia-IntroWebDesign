@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% block title %} About Use {% endblock %}
+{% block content %}
+<section class="heroimage">
+    <div class="heroimage">
+      <img
+        src="https://sophialearning.s3.amazonaws.com/markup_pictures/42752/file/57b93aa7124f0d46f9f90de527637eb6.png"
+        alt="Maple tree"
+        title="Maple tree"
+      />
+    </div>
+  </section>
+  <section>
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit veritatis itaque inventore eveniet nobis repudiandae excepturi voluptates dolorem adipisci voluptatum dicta optio id, quos, repellendus non doloribus sed consequuntur reiciendis?0
+    </p>
+  </section>
+  <section>
+    <h2>Business hours</h2>
+    <p>Mon-Fri: 9am-7pm</p>
+    <p>Sat-Sun: 10am-4pm</p>
+  </section>
+  <section>
+    <form class="contact_us_form" action="">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+  </section>
+{% endblock %}

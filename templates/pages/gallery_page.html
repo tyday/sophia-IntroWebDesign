@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% block title %} Gallery page {% endblock %}
+{% block content %}
+<section class="gallery">
+    <div class="go_to_cart">
+        <button>Go to cart</button>
+    </div>
+    <div class="product_list_phone">
+        <table>
+            {% for product in products %}
+            <tr>
+                <td>{% include 'components/product_card_gallery.html' %}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="product_list_desktop">
+        <table>
+            {% for row in products|batch(3, None) %}
+            <tr>
+                {% for product in row %}
+                <td>
+                    {% if product %}
+                        {% include 'components/product_card_gallery.html' %}
+                    {% endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</section>
+{% endblock %}

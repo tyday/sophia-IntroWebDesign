@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block title %} Other Page {% endblock %}
+{% block content %}
+<H2>Customer Spotligh</H2>
+<h3>Customer testimonials</h3>
+{% for testimonial in testimonials %}
+    <h4>{{ testimonial.name }}</h4>
+    <p>{{ testimonial.testimonial }}</p>
+{% endfor %}
+{% endblock %}
