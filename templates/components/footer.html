@@ -1,10 +1,10 @@
 <footer>
   <div class="subscribe">
     <form action="post">
-      <h3>Subscribe to our newsletter</h2>
+      <h3>Subscribe to our newsletter</h3>
       <label for="email">Email Address:</label>
-      <input type="email" id="email">
-      <button>Subscribe!</button>
+      <input type="email" id="email" name="email">
+      <button type="submit">Subscribe!</button>
     </form>
   </div>
   <div class="social">
@@ -12,10 +12,11 @@
     <a href="https://www.twitter.com">Twitter</a>
     <a href="https://www.instagram.com">Instagram</a>
   </div>
-<div class="links">
-    <a href="/" aria-current="page">Home</a>
-    <a href="/gallery_page.html" aria-current="page">Gallery</a>
-    <a href="/about_us_page.html" aria-current="page">About Us</a>
-    <a href="/other_page.html">Other page</a>
-</div>
+  <div class="links">
+    {% for link in nav_links %}
+      <a href="{{ link.href }}" {% if current_page == link.page %}aria-current="page"{% endif %}>
+        {{ link.text }}
+      </a>
+    {% endfor %}
+  </div>
 </footer>

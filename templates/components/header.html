@@ -9,9 +9,10 @@
     <h1 class="logo">Bloom Valley Nursery</h1>
   </div>
   <nav>
-    <a href="/" aria-current="page">Home</a>
-    <a href="/gallery_page.html" aria-current="page">Gallery</a>
-    <a href="/about_us_page.html" aria-current="page">About Us</a>
-    <a href="/other_page.html">Other page</a>
+    {% for link in nav_links %}
+      <a href="{{ link.href }}" {% if current_page == link.page %}aria-current="page"{% endif %}>
+        {{ link.text }}
+      </a>
+    {% endfor %}
   </nav>
 </header>
