@@ -4,63 +4,63 @@
         "name": "Aloe Plant",
         "price": 19.99,
         "description": "This is a description of the Aloe Plant.",
-        "image": "assets/Client1_AloePlant.png"
+        "image": "static/images/gallery/Client1_AloePlant.png"
     },
     {
         "id": 2,
         "name": "Apple Tree",
         "price": 29.99,
         "description": "This is a description of the Apple tree.",
-        "image": "assets/Client1_AppleTree.png"
+        "image": "static/images/gallery/Client1_AppleTree.png"
     },
     {
         "id": 3,
         "name": "Birch Tree",
         "price": 39.99,
         "description": "This is a description of the Birch tree.",
-        "image": "assets/Client1_BirchTree.png"
+        "image": "static/images/gallery/Client1_BirchTree.png"
     },
     {
         "id": 4,
         "name": "Bird House",
         "price": 49.99,
         "description": "This is a description of the bird house.",
-        "image": "assets/Client1_BirdHouse.png"
+        "image": "static/images/gallery/Client1_BirdHouse.png"
     },
     {
         "id": 5,
         "name": "Maple Tree",
         "price": 19.99,
         "description": "This is a description of the Maple Tree.",
-        "image": "assets/Client1_MapleTree.png"
+        "image": "static/images/gallery/Client1_MapleTree.png"
     },
     {
         "id": 6,
         "name": "Potting Soil",
         "price": 9.99,
         "description": "This is a description of the Potting Soil.",
-        "image": "assets/Client1_PottingSoil.png"
+        "image": "static/images/gallery/Client1_PottingSoil.png"
     },
     {
         "id": 7,
         "name": "Spider Plant",
         "price": 12.99,
         "description": "This is a description of the Spider Plant.",
-        "image": "assets/Client1_SpiderPlant.png"
+        "image": "static/images/gallery/Client1_SpiderPlant.png"
     },
     {
         "id": 8,
         "name": "String of Pearls",
         "price": 14.99,
         "description": "This is a description of the String of Pearls.",
-        "image": "assets/Client1_StringOfPearls.png"
+        "image": "static/images/gallery/Client1_StringOfPearls.png"
     },
     {
         "id": 9,
         "name": "Watering can",
         "price": 19.99,
         "description": "This is a description of the watering can.",
-        "image": "assets/Client1_WateringCan.png"
+        "image": "static/images/gallery/Client1_WateringCan.png"
     }
 ]
 
