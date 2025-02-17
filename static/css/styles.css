@@ -117,3 +117,35 @@ nav {
   display: flex;
   gap: 15px;
 }
+
+/* Hero image */
+
+.heroimage {
+  position: relative;
+  text-align: center;
+}
+
+.heroimage img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-text a:hover {
+  text-decoration: underline;
+}
