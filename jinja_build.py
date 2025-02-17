@@ -44,3 +44,9 @@ for item in templates:
         ))
 
 print("✔ Jinja templates compiled successfully into 'renders/'")
+
+# Copy static files to 'renders/' directory
+import shutil
+shutil.copytree('static', 'renders/static', dirs_exist_ok=True)
+print("✔ Static files copied to 'renders/static/'")
+
