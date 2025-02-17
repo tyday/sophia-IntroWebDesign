@@ -9,6 +9,44 @@ body {
   color: black;
   background-color: white;
 }
+/* Standard element styles for consistency */
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: Comfortaa, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+p {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+strong {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+small {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/* Utility classes for flexibility */
 .title-large {
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -39,17 +77,12 @@ body {
   font-size: 16px;
 }
 
-.body {
-  font-family: Calibri, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.captions {
+.caption {
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
 }
+
 footer{
   padding: 0 .5rem;
   background-color: #E0D2BD;
@@ -158,7 +191,9 @@ nav {
 .section-container{
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 2rem; */
+}
+.section-container--padded{
+  padding: 1rem;
 }
 .section-container h1,
 .section-container h2,
