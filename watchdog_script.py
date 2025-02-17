@@ -12,15 +12,15 @@ class ChangeHandler(FileSystemEventHandler):
         if event.is_directory:
             return
         
-        # Only watch specific file types
+        # Watch specific file types
         if not event.src_path.endswith(('.html', '.css', '.js', '.json')):
             return
 
         current_time = time.time()
         file_modified_time = self.last_modified_time.get(event.src_path, 0)
 
-        # Debounce: Ignore events that happen too quickly after each other
-        if current_time - file_modified_time < 1.5:  # Adjust debounce time as needed
+        # Debounce: Ignore rapid consecutive changes (1.5s delay)
+        if current_time - file_modified_time < 1.5:
             return
 
         self.last_modified_time[event.src_path] = current_time  # Update last modified time
@@ -30,18 +30,23 @@ class ChangeHandler(FileSystemEventHandler):
         result = subprocess.run(['python', 'jinja_build.py'])
 
         if result.returncode == 0:
-            print("Rebuild successful!")
+            print("✔ Rebuild successful!")
         else:
-            print("Error running jinja_build.py!")
+            print("❌ Error running jinja_build.py!")
 
 if __name__ == "__main__":
-    path = './templates'  # Monitor the templates directory
+    paths_to_watch = ['./templates', './static']  # Watch templates & static folders
+
     event_handler = ChangeHandler()
     observer = Observer()
-    observer.schedule(event_handler, path, recursive=True)
+
+    # Schedule observers for both directories
+    for path in paths_to_watch:
+        observer.schedule(event_handler, path, recursive=True)
+
     observer.start()
 
-    print(f"Monitoring changes in {path}...")
+    print(f"🔍 Monitoring changes in {', '.join(paths_to_watch)}...")
 
     try:
         while True:
