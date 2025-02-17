@@ -1,25 +1,18 @@
 {% extends 'main.html' %} {% block title %} Home page {% endblock %} {% block
 content %}
 {% include 'components/hero_image.html' %}
-<section class="promo">
-  <h2>Check out our new flower arrangements!</h2>
-  <img
-    src="https://sophialearning.s3.amazonaws.com/markup_pictures/42757/file/80b2bb90b263c1d7f5fb78a4fdca7898.png"
-    alt="Potting soil"
-    title="Potting soil"
-  />
-  <a href="/gallery_page.html">View our gallery</a>
-</section>
-<section class="products">
+{% include 'components/promocard.html' %}
+<section class="products section-container">
   <h2>Products</h2>
   <!-- <template id="product-template">
       <img src="" alt=""> -->
   <div class="product_list">
-    {% for product in products %} {% include 'components/product_card.html' %}
+    {% for product in products[:6] %} 
+      {% include 'components/product_card.html' %}
     {% endfor %}
   </div>
 </section>
-<section class="shopping_perks">
+<section class="shopping_perks section-container">
   <h2>Shopping perks</h2>
   <p>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, harum nemo

@@ -51,6 +51,7 @@ body {
   font-size: 11px;
 }
 footer{
+  padding: 0 .5rem;
   background-color: #E0D2BD;
 }
 footer>div{
@@ -139,6 +140,10 @@ nav {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  background-color: rgba(75, 74, 30, 0.4); /* #4b4a1e with 50% opacity */
+  padding: 20px 40px; /* Adjusts oval shape */
+  border-radius: 50%; /* Makes the div oval */
+  min-width: 350px; /* looks better on small screens */
 }
 
 .hero-text a {
@@ -148,4 +153,54 @@ nav {
 
 .hero-text a:hover {
   text-decoration: underline;
+}
+
+.section-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+.section-container h1,
+.section-container h2,
+.section-container h3,
+.section-container h4,
+.section-container h5,
+.section-container h6 {
+  text-align: center;
+}
+
+
+.product_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product_card {
+  text-align: center;
+  margin: 10px;
+}
+
+.product_card img {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .product_card img {
+      width: 200px;
+  }
+
+  .product_card h3 {
+      display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .product_card h3 {
+      display: none;
+  }
+}
+
+.shopping_perks{
+  padding: 1rem;
 }

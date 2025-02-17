@@ -53,7 +53,7 @@
         "name": "String of Pearls",
         "price": 14.99,
         "description": "This is a description of the String of Pearls.",
-        "image": "static/images/gallery/Client1_StringOfPearls.png"
+        "image": "static/images/gallery/Client1_StringofPearls.png"
     },
     {
         "id": 9,

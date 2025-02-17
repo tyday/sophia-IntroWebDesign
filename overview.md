@@ -6,7 +6,11 @@ Bloom Vallery Nursery: A color palette consisting of five color options: Berry B
 
 Matching logos are available for each color in Color Palette 1:
 
-Berry Blossom, 790D1D 	Autumn Leaf, 9D352E 	Olive Green, 4B4A1E 	Bark Brown, 79512E 	Rivulet Beige, E0D2BD
+Berry Blossom, #790D1D 	
+Autumn Leaf, #9D352E 	
+Olive Green, #4B4A1E 	
+Bark Brown, #79512E 	
+Rivulet Beige, #E0D2BD
 
 ## Font color selection
 black #000000
