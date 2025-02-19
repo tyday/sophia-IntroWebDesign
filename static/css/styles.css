@@ -239,3 +239,25 @@ nav {
 .shopping_perks{
   padding: 1rem;
 }
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.category {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0px 0px 0px;
+}
+.category img {
+  width: 280px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #ccc;
+}
+.category h3 {
+  margin: 2px 0;
+}
