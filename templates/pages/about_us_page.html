@@ -10,38 +10,17 @@
       />
     </div>
   </section>
-  <section>
+  <section class="section-container section-container--padded">
     <h2>About Us</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit veritatis itaque inventore eveniet nobis repudiandae excepturi voluptates dolorem adipisci voluptatum dicta optio id, quos, repellendus non doloribus sed consequuntur reiciendis?0
     </p>
   </section>
-  <section>
+  <section class="section-container section-container--padded">
     <h2>Business hours</h2>
     <p>Mon-Fri: 9am-7pm</p>
     <p>Sat-Sun: 10am-4pm</p>
   </section>
-  <section>
-    <form class="contact_us_form" action="/contact" method="post">
-      <fieldset>
-        <legend>Contact Us</legend>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-        <div>
-          <label for="feedback">Feedback:</label>
-          <textarea id="feedback" name="feedback" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
+  <section class="section-container section-container--padded">
+    {% include 'components/contact_us_form.html' %}
   </section>
 {% endblock %}
