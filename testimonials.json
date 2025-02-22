@@ -2,21 +2,25 @@
     {
         "id": 1,
         "name": "John Doe",
-        "testimonial": "Bloom Valley Nursery has the best flowers in town!"
+        "testimonial": "Bloom Valley Nursery has the best flowers in town!",
+        "image_url": "static/images/gallery/Client1_WateringCan.png"
     },
     {
         "id": 2,
         "name": "Jane Doe",
-        "testimonial": "The customer service at Bloom Valley Nursery is top-notch!"
+        "testimonial": "The customer service at Bloom Valley Nursery is top-notch!",
+        "image_url": "static/images/gallery/Client1_WateringCan.png"
     },
     {
         "id": 3,
         "name": "Bob Smith",
-        "testimonial": "Bloom Valley Nursery has the most beautiful plants I've ever seen!"
+        "testimonial": "Bloom Valley Nursery has the most beautiful plants I've ever seen!",
+        "image_url": "static/images/gallery/Client1_WateringCan.png"
     },
     {
         "id": 4,
         "name": "Alice Johnson",
-        "testimonial": "I've been going to Bloom Valley Nursery for years and I've never been disappointed!"
+        "testimonial": "I've been going to Bloom Valley Nursery for years and I've never been disappointed!",
+        "image_url": "static/images/gallery/Client1_WateringCan.png"
     }
 ]

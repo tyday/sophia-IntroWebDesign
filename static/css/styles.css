@@ -235,22 +235,6 @@ nav {
   height: auto;
 }
 
-@media (min-width: 768px) {
-  .product_card img {
-      width: 200px;
-  }
-
-  .product_card h3 {
-      display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  .product_card h3 {
-      display: none;
-  }
-}
-
 .shopping_perks{
   padding: 1rem;
 }
@@ -397,4 +381,82 @@ input[type="checkbox"] {
   font-weight: bold;
   font-size: 14px;
   cursor: pointer; /* Allows clicking the label to toggle checkbox */
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(1fr); /* Two columns */
+  gap: 20px; /* Adds space between items */
+}
+.testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  background: var(--background-light);
+}
+
+.testimonial img {
+  width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background: #ccc;
+    flex-shrink: 0; 
+}
+
+.testimonial-content {
+  margin-left: 15px;
+}
+
+.testimonial-content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.testimonial-content p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+
+@media (min-width: 768px) {
+  .section-container--padded{
+    padding: 1rem;
+  }
+  .section-container h1,
+  .section-container h2,
+  .section-container h3,
+  .section-container h4,
+  .section-container h5,
+  .section-container h6 {
+    text-align: left;
+  }
+  .product_card img {
+      width: 200px;
+  }
+
+  .product_card h3 {
+      display: block;
+  }
+  .customer-spotlight {
+    max-width: 1000px; /* Expanding container width */
+    margin: 0 auto;
+  }
+  .testimonial {
+    flex-wrap: nowrap;
+  }
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 767px) {
+  .product_card h3 {
+      display: none;
+  }
 }
