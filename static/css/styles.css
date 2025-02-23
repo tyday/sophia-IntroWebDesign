@@ -6,8 +6,8 @@
   --border-color: #ccc;
   --background-light: #eee;
   --text-color: #555;
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
+  --primary-color: #9D352E ;
+  --primary-hover: #790D1D;
   --form-bg: #ddd; /* Background color */
   --input-bg: #f5f5f5;
   --border-color: #999;
@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-family: Comfortaa, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
 }
